@@ -16,6 +16,19 @@ A **Django REST Framework** (DRF) project for managing tasks and task assignment
 
 ---
 
+## **API Endpoints** 
+
+Endpoint	Method	Description
+/api/users/	POST	Create a new user
+/api/token/	POST	Obtain JWT access & refresh tokens
+/api/token/refresh/	POST	Refresh JWT access token
+/api/users/	GET	List all users (admin only)
+/api/users/{id}/	GET / PUT / PATCH	Retrieve or update user info
+/api/tasks/	GET / POST	List all tasks / Create a task
+/api/tasks/{id}/	GET / PUT / PATCH / DELETE	Retrieve / update / delete a task
+/api/task-assignments/	GET / POST	List assignments / Assign a task
+/api/task-assignments/{id}/	GET / PUT / PATCH / DELETE	Retrieve / update / delete an assignment
+
 ## **Technologies Used**
 
 - Python 3.x
