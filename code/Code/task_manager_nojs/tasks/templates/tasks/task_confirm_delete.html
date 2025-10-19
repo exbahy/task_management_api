@@ -9,7 +9,7 @@
             <div class="card-body">
                 <h2 class="card-title text-center mb-4">Confirm Delete</h2>
                 
-                {# Note: Django's DeleteView passes the item as 'object' #}
+                {# Django's generic DeleteView uses 'object' to pass the item #}
                 <p>Are you sure you want to delete the task: <strong>"{{ object.title }}"</strong>?</p>
                 
                 <p class="text-danger">This action cannot be undone.</p>
